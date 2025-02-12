@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Restaurant Reservation System</h1>
+        </header>
+
+        <div class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm">
+                <input type="text" id="customerName" placeholder="Your Name" required>
+                <input type="tel" id="customerPhone" placeholder="Your Phone" required>
+                <input type="number" id="guestCount" placeholder="Guest Count" required>
+                <button type="submit">Reserve Table</button>
+            </form>
+        </div>
+
+        <div class="reservation-details">
+            <h2>Reservations</h2>
+            <div class="seats-left">
+                <p><strong>Seats Left:</strong> <span id="seatsLeft">20</span></p>
+            </div>
+
+            <table id="reservationTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Check-in Time</th>
+                        <th>Checkout</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Reservation Entries Will Appear Here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
